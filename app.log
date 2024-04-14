@@ -1,0 +1,1961 @@
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET / HTTP/1.1
+DEBUG:websockets.client:> Host: api.mainnet-beta.solana.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: YpwahwMHqqGot/9RjZyo7w==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.12 websockets/11.0.3
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< connection: Upgrade
+DEBUG:websockets.client:< sec-websocket-accept: ZNOcs5JFI2E83QV8ZHlX7c64KY0=
+DEBUG:websockets.client:< x-rpc-node: fra60
+DEBUG:websockets.client:< x-ratelimit-tier: free
+DEBUG:websockets.client:< x-ratelimit-method-limit: 40
+DEBUG:websockets.client:< x-ratelimit-method-remaining: 39
+DEBUG:websockets.client:< x-ratelimit-rps-limit: 100
+DEBUG:websockets.client:< x-ratelimit-rps-remaining: 99
+DEBUG:websockets.client:< x-ratelimit-endpoint-limit: unlimited
+DEBUG:websockets.client:< x-ratelimit-endpoint-remaining: -4574
+DEBUG:websockets.client:< x-ratelimit-conn-limit: 40
+DEBUG:websockets.client:< x-ratelimit-conn-remaining: 39
+DEBUG:websockets.client:< x-ratelimit-connrate-limit: 40
+DEBUG:websockets.client:< x-ratelimit-connrate-remaining: 39
+DEBUG:websockets.client:< x-ratelimit-pubsub-limit: 5
+DEBUG:websockets.client:< x-ratelimit-pubsub-remaining: 5
+DEBUG:websockets.client:< access-control-allow-origin: backend_traffic
+DEBUG:websockets.client:< access-control-allow-methods: OPTIONS, POST, GET
+DEBUG:websockets.client:< access-control-allow-headers: authorization, *
+DEBUG:websockets.client:< access-control-max-age: 86400
+DEBUG:websockets.client:< allow: OPTIONS, POST, GET
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"method":"logsSubscribe","jsonrpc":"2.0","id":...mitment":"finalized"}]}' [149 bytes]
+DEBUG:websockets.client:< TEXT '{"jsonrpc":"2.0","result":241612,"id":1}' [40 bytes]
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 5FBYQfqugHbPuCereHg4cjhvzdnCRF6z6JQX5JkkcJQH, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: H2HgUgD7o9sXjEDzoT63QwarYLf32unnkrwyf7HJ3Q9t
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFA330>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GETMj6n9d95ZKJeqS4qaKCuQhcGyXViQt8nonqmFmVg, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: FXYzhSehVieNEu5QzyphZjnLtEWV51XT8qJdWQExmB75
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAF60>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 6jWDfLQeZsKGrSSsMsS6JRRLpj2yWVipz7VA7qN3bfsb, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 4CbvUzJDxMaHwnHxZYGUBDvF4SjgWiP2nBBA9bTtPVtW
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB5E0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 9u1w2BoDmoivsuGNNeWuV1kWv1xqLXUMgABYqGc9nsmo, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 6gv6dB4PtkhZmRiqMrMCkhc42gjHA2amcLgyBHiHmdcP
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB370>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 6shBB5qbR9KHqf7NzYVkKL36Usr1yhr1snxu5zynWUax, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ChkttnfXD5xjHL4AsReDjAoVW6NWKkocB9DMQ1hzR8kd
+INFO:root:i=1
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB370>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 6shBB5qbR9KHqf7NzYVkKL36Usr1yhr1snxu5zynWUax, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ChkttnfXD5xjHL4AsReDjAoVW6NWKkocB9DMQ1hzR8kd
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=2
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=3
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 9kxKCHFX8fXwN3Jd182uGcw6zRUmt1QyzKjAAYFiFq2R, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: FeYZXCcNP8Td3YEq37gp4rHnZq7QTkgum8vYsKEMcVeS
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB2A0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 9kxKCHFX8fXwN3Jd182uGcw6zRUmt1QyzKjAAYFiFq2R, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: FeYZXCcNP8Td3YEq37gp4rHnZq7QTkgum8vYsKEMcVeS
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=4
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=5
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 9kxKCHFX8fXwN3Jd182uGcw6zRUmt1QyzKjAAYFiFq2R, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: FeYZXCcNP8Td3YEq37gp4rHnZq7QTkgum8vYsKEMcVeS
+INFO:root:i=6
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=7
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 9kxKCHFX8fXwN3Jd182uGcw6zRUmt1QyzKjAAYFiFq2R, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: FeYZXCcNP8Td3YEq37gp4rHnZq7QTkgum8vYsKEMcVeS
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFA5A0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: G91U6Cny8s5ZJbewZ41yuxenBKHUt6coCrggKLfsFzd8, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ASHinPF4bukKxjdjCbrYUDN7S9pr6btfbt6hnAVbafJx
+INFO:root:i=8
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A6825F7C60>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: G91U6Cny8s5ZJbewZ41yuxenBKHUt6coCrggKLfsFzd8, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ASHinPF4bukKxjdjCbrYUDN7S9pr6btfbt6hnAVbafJx
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=9
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 7HsbHfMJvVzjwqccH4da8TyjLMCh193CNDUq3csna72X, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 8pkJDTJ93HYLcrv2AcVAszNTTuvUPFKZ5weizoV3UZEy
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB370>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 7HsbHfMJvVzjwqccH4da8TyjLMCh193CNDUq3csna72X, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 8pkJDTJ93HYLcrv2AcVAszNTTuvUPFKZ5weizoV3UZEy
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFBE00>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: HGe6aiZGSEpcLgmq3rtvNWt9UcscrjNjroqR1LTmC6ie, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 67ixPo7kDJ5QMA1Men4sS19F2dHWFBnCsLGGsCrnmmxS
+INFO:root:i=10
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: HGe6aiZGSEpcLgmq3rtvNWt9UcscrjNjroqR1LTmC6ie, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 67ixPo7kDJ5QMA1Men4sS19F2dHWFBnCsLGGsCrnmmxS
+INFO:root:i=1
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFBE00>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: HGe6aiZGSEpcLgmq3rtvNWt9UcscrjNjroqR1LTmC6ie, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 67ixPo7kDJ5QMA1Men4sS19F2dHWFBnCsLGGsCrnmmxS
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=11
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=12
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: Fzhb9ksxNDGy1nCXtfc4a1vTtaaFwQucsECKaey9Dr2Y, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: Cwc2aDodpQjKoUfA1Xo3DWLG5eY3KxG9PFDGhoiV1oDb
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=2
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFBE00>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: Fzhb9ksxNDGy1nCXtfc4a1vTtaaFwQucsECKaey9Dr2Y, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: Cwc2aDodpQjKoUfA1Xo3DWLG5eY3KxG9PFDGhoiV1oDb
+INFO:root:i=13
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: Fzhb9ksxNDGy1nCXtfc4a1vTtaaFwQucsECKaey9Dr2Y, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: Cwc2aDodpQjKoUfA1Xo3DWLG5eY3KxG9PFDGhoiV1oDb
+INFO:root:i=3
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1302, in close_connection
+    await self.transfer_data_task
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 959, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1029, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1104, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1161, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\framing.py", line 68, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "c:\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 56, in main
+    async for i, signature in enumerate(process_messages(websocket, log_instruction)):  # type: ignore
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 98, in process_messages
+    async for idx, msg in enumerate(websocket):
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\websocket_api.py", line 107, in recv
+    data = await super().recv()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+ERROR:root:sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1302, in close_connection
+    await self.transfer_data_task
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 970, in transfer_data
+    await asyncio.shield(self._put_message_waiter)
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 56, in main
+    async for i, signature in enumerate(process_messages(websocket, log_instruction)):  # type: ignore
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 98, in process_messages
+    async for idx, msg in enumerate(websocket):
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\websocket_api.py", line 107, in recv
+    data = await super().recv()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB370>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GNxas7VTWyCi4cwhoRPjqv2kHiVhf8LxjxEYytkQo8tU, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: Hc5GGbjTUfvFKJbRbyz9ZHAnMECB7uCfqea4DAipm2Nr
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GNxas7VTWyCi4cwhoRPjqv2kHiVhf8LxjxEYytkQo8tU, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: Hc5GGbjTUfvFKJbRbyz9ZHAnMECB7uCfqea4DAipm2Nr
+INFO:root:i=0
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=2
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=3
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BF9D80>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GrfABrWbbN3WwxzoDkt5DcR9p3yvr4UFyZG9fnLb5azB, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 9rs5z4GnzheRx74JrtWXCHGoPtqQRBudMExRrckd3FYc
+INFO:root:i=1
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB370>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GNxas7VTWyCi4cwhoRPjqv2kHiVhf8LxjxEYytkQo8tU, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: Hc5GGbjTUfvFKJbRbyz9ZHAnMECB7uCfqea4DAipm2Nr
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=2
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=4
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BF9D80>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GrfABrWbbN3WwxzoDkt5DcR9p3yvr4UFyZG9fnLb5azB, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 9rs5z4GnzheRx74JrtWXCHGoPtqQRBudMExRrckd3FYc
+ERROR:root:sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1302, in close_connection
+    await self.transfer_data_task
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 970, in transfer_data
+    await asyncio.shield(self._put_message_waiter)
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 56, in main
+    async for i, signature in enumerate(process_messages(websocket, log_instruction)):  # type: ignore
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 98, in process_messages
+    async for idx, msg in enumerate(websocket):
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\websocket_api.py", line 107, in recv
+    data = await super().recv()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+ERROR:root:sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1302, in close_connection
+    await self.transfer_data_task
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 959, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1029, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1104, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1161, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\framing.py", line 98, in read
+    data = await reader(length)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "c:\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 56, in main
+    async for i, signature in enumerate(process_messages(websocket, log_instruction)):  # type: ignore
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 98, in process_messages
+    async for idx, msg in enumerate(websocket):
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\websocket_api.py", line 107, in recv
+    data = await super().recv()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+INFO:root:i=0
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-38' coro=<run_pairs() done, defined at C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py:200> exception=AttributeError("'NoneType' object has no attribute 'transaction'")>
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 201, in run_pairs
+    await main ()
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 137, in get_tokens
+    instructions = get_instructions(transaction)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 153, in get_instructions
+    .transaction \
+     ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transaction'
+INFO:root:i=0
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-86' coro=<run_pairs() done, defined at C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py:200> exception=AttributeError("'NoneType' object has no attribute 'transaction'")>
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 201, in run_pairs
+    await main ()
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 137, in get_tokens
+    instructions = get_instructions(transaction)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 153, in get_instructions
+    .transaction \
+     ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transaction'
+INFO:root:i=0
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=2
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=3
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A6825F7D30>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 5Lnhygm6JGLqUYiyJv47vqvSoHuZMKaNLZohB6Gko4jE, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 8QeYszFShFPNKPYwLtwowMFSwhBrTw5uuTSrgZg4Toeo
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFA0C0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: FavBDB23ii19xSDYCEo6toNi3N8RB2osjQzNrcBuVbcC, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 3HXo87pBKhrUtW2fzGDzU3UmSySSCsDvEmU4ZADcNJso
+INFO:root:i=1
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFA0C0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: FavBDB23ii19xSDYCEo6toNi3N8RB2osjQzNrcBuVbcC, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 3HXo87pBKhrUtW2fzGDzU3UmSySSCsDvEmU4ZADcNJso
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=2
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=3
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A683CE06C0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: FavBDB23ii19xSDYCEo6toNi3N8RB2osjQzNrcBuVbcC, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 3HXo87pBKhrUtW2fzGDzU3UmSySSCsDvEmU4ZADcNJso
+INFO:root:i=0
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=1
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A683CE2400>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: FavBDB23ii19xSDYCEo6toNi3N8RB2osjQzNrcBuVbcC, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 3HXo87pBKhrUtW2fzGDzU3UmSySSCsDvEmU4ZADcNJso
+INFO:root:i=4
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A683CE0BA0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: DnubqJmmqs87TWSr5MVUrdeopCjGQEkmnC6WDzM2Lh8H, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: HbeotJd6wPnghGp2xPXhpzDV2wYSfama7opv1U2CsdFD
+INFO:root:i=5
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BF9B10>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: DnubqJmmqs87TWSr5MVUrdeopCjGQEkmnC6WDzM2Lh8H, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: HbeotJd6wPnghGp2xPXhpzDV2wYSfama7opv1U2CsdFD
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=6
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 4ZBozsX2GWYzHNzpTA2RiuHrpzgo2t9oVP2uQhwRLUxm, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: i1wzzhL1u4PXciceYgBC6od9MqYhaihDZBdGqcgHW1B
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAC20>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 4ZBozsX2GWYzHNzpTA2RiuHrpzgo2t9oVP2uQhwRLUxm, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: i1wzzhL1u4PXciceYgBC6od9MqYhaihDZBdGqcgHW1B
+INFO:root:i=7
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFB920>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: E3vDujKcTS1Sj6uVVyUmbAYGff1kW6rgLeCSrseF3tvW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 9myCkfp4t1pE4g2aChPrzqveVo1yiwB4GQqJEQ5cNPEa
+INFO:root:i=8
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: E3vDujKcTS1Sj6uVVyUmbAYGff1kW6rgLeCSrseF3tvW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 9myCkfp4t1pE4g2aChPrzqveVo1yiwB4GQqJEQ5cNPEa
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=9
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=10
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:no close frame received or sent
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 959, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1029, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1104, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1161, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\framing.py", line 68, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\asyncio\streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 56, in main
+    async for i, signature in enumerate(process_messages(websocket, log_instruction)):  # type: ignore
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 98, in process_messages
+    async for idx, msg in enumerate(websocket):
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\websocket_api.py", line 107, in recv
+    data = await super().recv()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 930, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+INFO:root:i=11
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 4GTygwUE6pT4B4fFjipof3sLMvnS89PyamSSYD3JVCZE, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ESq4ymxFyPoQ7oUwod5w8ycacWQVEe3DrmZWxaaLgzpw
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAE90>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 4GTygwUE6pT4B4fFjipof3sLMvnS89PyamSSYD3JVCZE, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ESq4ymxFyPoQ7oUwod5w8ycacWQVEe3DrmZWxaaLgzpw
+INFO:root:i=1
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAE90>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 4GTygwUE6pT4B4fFjipof3sLMvnS89PyamSSYD3JVCZE, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ESq4ymxFyPoQ7oUwod5w8ycacWQVEe3DrmZWxaaLgzpw
+INFO:root:i=12
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 4GTygwUE6pT4B4fFjipof3sLMvnS89PyamSSYD3JVCZE, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ESq4ymxFyPoQ7oUwod5w8ycacWQVEe3DrmZWxaaLgzpw
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=2
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAE90>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: So11111111111111111111111111111111111111112, 
+ Token1: GaTDvKoyNREN6gJuQzbRUTVEKKs1pHtGWuuxoXjcSKxN, 
+ Pair: 54TLmH1oUPR2pjeS8qiNKFekxeUfJCShVLcjNpg8qXLS
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFA4D0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: So11111111111111111111111111111111111111112, 
+ Token1: GaTDvKoyNREN6gJuQzbRUTVEKKs1pHtGWuuxoXjcSKxN, 
+ Pair: 54TLmH1oUPR2pjeS8qiNKFekxeUfJCShVLcjNpg8qXLS
+INFO:root:i=13
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=3
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAE90>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: ChanM2vka4gJ3ob1SejJXnxoNuoAXGGJxDMJRSLD7nzW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: CRn7xMrVgKSVAy7wM2ZGV8RvpACtVBp5L85YuF14u6ss
+INFO:root:i=14
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: ChanM2vka4gJ3ob1SejJXnxoNuoAXGGJxDMJRSLD7nzW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: CRn7xMrVgKSVAy7wM2ZGV8RvpACtVBp5L85YuF14u6ss
+INFO:root:i=0
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=1
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAC20>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: ChanM2vka4gJ3ob1SejJXnxoNuoAXGGJxDMJRSLD7nzW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: CRn7xMrVgKSVAy7wM2ZGV8RvpACtVBp5L85YuF14u6ss
+INFO:root:i=15
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=4
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFAE90>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: ChanM2vka4gJ3ob1SejJXnxoNuoAXGGJxDMJRSLD7nzW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: CRn7xMrVgKSVAy7wM2ZGV8RvpACtVBp5L85YuF14u6ss
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=5
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A683CE0930>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GLJDAfiCM7KvF6Msi9SUQqwB31mWSQ6JfHPfR2sTXTm9, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ETnC5FdYN8b2wroVbwLD99AEqTJRpuXTqLWTgch6Y3Nw
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BF9B10>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GLJDAfiCM7KvF6Msi9SUQqwB31mWSQ6JfHPfR2sTXTm9, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ETnC5FdYN8b2wroVbwLD99AEqTJRpuXTqLWTgch6Y3Nw
+INFO:root:i=16
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=17
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=6
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A683CE31D0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: GLJDAfiCM7KvF6Msi9SUQqwB31mWSQ6JfHPfR2sTXTm9, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: ETnC5FdYN8b2wroVbwLD99AEqTJRpuXTqLWTgch6Y3Nw
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BF9B10>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: FfzWMQWSV6rYGWKDAv4TE2UURvdmv82wPjQbSat1TxxD, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: HD124cMGKLgj52Djf4bw2FNngDEpNWWQjWqUZqGuA1Gx
+INFO:root:i=18
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFA8E0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: FfzWMQWSV6rYGWKDAv4TE2UURvdmv82wPjQbSat1TxxD, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: HD124cMGKLgj52Djf4bw2FNngDEpNWWQjWqUZqGuA1Gx
+INFO:root:i=19
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A683CE1D80>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: FfzWMQWSV6rYGWKDAv4TE2UURvdmv82wPjQbSat1TxxD, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: HD124cMGKLgj52Djf4bw2FNngDEpNWWQjWqUZqGuA1Gx
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=20
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 8veNfzQXKyMWoAoT3uUWf9U6As1NTc9evFAyzbgh6ozu, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: E4BEUSkwWPNxc4pUVuFFqZNsFnMvURAUnvRjfrxTscRR
+INFO:root:i=21
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 8veNfzQXKyMWoAoT3uUWf9U6As1NTc9evFAyzbgh6ozu, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: E4BEUSkwWPNxc4pUVuFFqZNsFnMvURAUnvRjfrxTscRR
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 1302, in close_connection
+    await self.transfer_data_task
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 970, in transfer_data
+    await asyncio.shield(self._put_message_waiter)
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 56, in main
+    async for i, signature in enumerate(process_messages(websocket, log_instruction)):  # type: ignore
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 98, in process_messages
+    async for idx, msg in enumerate(websocket):
+  File "c:\Python312\Lib\site-packages\asyncstdlib\builtins.py", line 620, in enumerate
+    async for item in item_iter:
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 497, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\websocket_api.py", line 107, in recv
+    data = await super().recv()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 568, in recv
+    await self.ensure_open()
+  File "c:\Python312\Lib\site-packages\websockets\legacy\protocol.py", line 944, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: sent 1011 (unexpected error) keepalive ping timeout; no close frame received
+INFO:root:i=0
+INFO:root:i=0
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-208' coro=<run_pairs() done, defined at C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py:200> exception=AttributeError("'NoneType' object has no attribute 'transaction'")>
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 201, in run_pairs
+    await main ()
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 137, in get_tokens
+    instructions = get_instructions(transaction)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 153, in get_instructions
+    .transaction \
+     ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transaction'
+INFO:root:i=22
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=23
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A683CE3D30>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: rkwisZqwW7weaBqvNViNipUja5RqZqu9tRZ9D7w3r82, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 43CtnaCLoVqPo84dTgxSucbJ4dU4f2whoNypvLyUV748
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BF9D80>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: rkwisZqwW7weaBqvNViNipUja5RqZqu9tRZ9D7w3r82, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 43CtnaCLoVqPo84dTgxSucbJ4dU4f2whoNypvLyUV748
+INFO:root:i=1
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+INFO:root:i=24
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-296' coro=<run_pairs() done, defined at C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py:200> exception=AttributeError("'NoneType' object has no attribute 'transaction'")>
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 201, in run_pairs
+    await main ()
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 137, in get_tokens
+    instructions = get_instructions(transaction)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 153, in get_instructions
+    .transaction \
+     ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transaction'
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A682BFA4D0>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 5roPzZcdTgPomPorgy4KJFVmy8Stih6RctQ5sLbwN2PW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 3GJKNZGkC3BtKu45BEHuEFPfq1C7NgmQTaAJRcKdWwsZ
+INFO:root:i=25
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: 5roPzZcdTgPomPorgy4KJFVmy8Stih6RctQ5sLbwN2PW, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 3GJKNZGkC3BtKu45BEHuEFPfq1C7NgmQTaAJRcKdWwsZ
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=26
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A680065080>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: CLLDxPZEvGzgNvgo98hAGMRxkL6iJaZBFYTmQCSikX14, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 9C9iKmCLYiKihrF5qRgc2cno8SrDns9rmShVjQgdSw3d
+INFO:root:i=0
+INFO:root:<generator object instructions_with_program_id.<locals>.<genexpr> at 0x000001A6825F5560>
+INFO:root:find LP !!!
+INFO:root:
+ Token0: CLLDxPZEvGzgNvgo98hAGMRxkL6iJaZBFYTmQCSikX14, 
+ Token1: So11111111111111111111111111111111111111112, 
+ Pair: 9C9iKmCLYiKihrF5qRgc2cno8SrDns9rmShVjQgdSw3d
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+ERROR:root:Transaction failed on attempt 1: list index out of range
+ERROR:root:Transaction failed after 1 attempts.
+INFO:root:i=27
+ERROR:root:
+Traceback (most recent call last):
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 43, in argument_decorator
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 48, in make_request
+    raw = self.make_request_unparsed(body)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\http.py", line 55, in make_request_unparsed
+    return _after_request_unparsed(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\providers\core.py", line 136, in _after_request_unparsed
+    raw_response.raise_for_status()
+  File "c:\Python312\Lib\site-packages\httpx\_models.py", line 749, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.mainnet-beta.solana.com'
+For more information check: https://httpstatuses.com/429
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 59, in main
+    await get_tokens(signature, RaydiumLPV4)
+  File "C:\Users\Julian\Desktop\Glitch\Glitch v2\trading bot tests\GlitchSolPy_v3\pairs.py", line 126, in get_tokens
+    transaction = solana_client.get_transaction(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\rpc\api.py", line 389, in get_transaction
+    return self._provider.make_request(body, GetTransactionResp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Python312\Lib\site-packages\solana\exceptions.py", line 45, in argument_decorator
+    raise internal_exception_cls(exc, func, *args, **kwargs) from exc
+solana.exceptions.SolanaRpcException
+INFO:root:sleep for 5 seconds and try again
